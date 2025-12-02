@@ -3,30 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pompidou Adventure</title>
+    <title>Tu Nombre | Portfolio Personal</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="game-container">
-        <div class="game-header">
-            <div class="score">Puntos: <span id="score">0</span></div>
-            <div class="lives">Vidas: <span id="lives">3</span></div>
-            <div class="level">Nivel: <span id="level">1</span></div>
-        </div>
-        
-        <canvas id="gameCanvas" width="800" height="600"></canvas>
-        
-        <div class="game-controls">
-            <div class="instructions">
-                <p>Usa las flechas para moverte y ESPACIO para saltar</p>
-                <p>¡Evita los barriles y llega al tubo superior!</p>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="#home">Tu Nombre</a>
             </div>
-            <button id="startButton">Iniciar Juego</button>
-            <button id="pauseButton">Pausar</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#cursos" class="nav-link">Cursos</a></li>
+                <li><a href="#noticias" class="nav-link">Noticias</a></li>
+                <li><a href="#entrevistas" class="nav-link">Entrevistas</a></li>
+                <li><a href="#clientes" class="nav-link">Clientes</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Tu Nombre</h1>
+            <p class="hero-subtitle">Profesión / Especialidad</p>
+            <p class="hero-description">Descripción breve sobre ti y tu trabajo. Una línea que capture la esencia de tu práctica profesional.</p>
         </div>
-    </div>
-    
+    </section>
+
+    <!-- Proyectos Section -->
+    <section id="proyectos" class="section">
+        <div class="container">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image">Imagen del Proyecto</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Proyecto 1</h3>
+                        <p class="project-description">Descripción breve del proyecto. Año, ubicación, características principales.</p>
+                        <span class="project-year">2024</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image">Imagen del Proyecto</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Proyecto 2</h3>
+                        <p class="project-description">Descripción breve del proyecto. Año, ubicación, características principales.</p>
+                        <span class="project-year">2023</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image">Imagen del Proyecto</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Proyecto 3</h3>
+                        <p class="project-description">Descripción breve del proyecto. Año, ubicación, características principales.</p>
+                        <span class="project-year">2023</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image">Imagen del Proyecto</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Proyecto 4</h3>
+                        <p class="project-description">Descripción breve del proyecto. Año, ubicación, características principales.</p>
+                        <span class="project-year">2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos Section -->
+    <section id="cursos" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Cursos</h2>
+            <div class="courses-list">
+                <div class="course-item">
+                    <div class="course-header">
+                        <h3 class="course-title">Curso de Diseño Avanzado</h3>
+                        <span class="course-date">2024</span>
+                    </div>
+                    <p class="course-description">Descripción del curso, metodología, duración y objetivos principales.</p>
+                    <div class="course-meta">
+                        <span class="course-location">Online / Presencial</span>
+                        <span class="course-duration">40 horas</span>
+                    </div>
+                </div>
+                <div class="course-item">
+                    <div class="course-header">
+                        <h3 class="course-title">Workshop de Innovación</h3>
+                        <span class="course-date">2023</span>
+                    </div>
+                    <p class="course-description">Descripción del curso, metodología, duración y objetivos principales.</p>
+                    <div class="course-meta">
+                        <span class="course-location">Presencial</span>
+                        <span class="course-duration">16 horas</span>
+                    </div>
+                </div>
+                <div class="course-item">
+                    <div class="course-header">
+                        <h3 class="course-title">Masterclass de Técnicas Modernas</h3>
+                        <span class="course-date">2023</span>
+                    </div>
+                    <p class="course-description">Descripción del curso, metodología, duración y objetivos principales.</p>
+                    <div class="course-meta">
+                        <span class="course-location">Online</span>
+                        <span class="course-duration">8 horas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Noticias Section -->
+    <section id="noticias" class="section">
+        <div class="container">
+            <h2 class="section-title">Noticias</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-date">15 Marzo 2024</div>
+                    <h3 class="news-title">Título de la Noticia</h3>
+                    <p class="news-excerpt">Resumen breve de la noticia o publicación. Puede incluir información sobre premios, reconocimientos, o eventos importantes.</p>
+                    <a href="#" class="news-link">Leer más →</a>
+                </article>
+                <article class="news-card">
+                    <div class="news-date">10 Febrero 2024</div>
+                    <h3 class="news-title">Nueva Colaboración Anunciada</h3>
+                    <p class="news-excerpt">Resumen breve de la noticia o publicación. Puede incluir información sobre premios, reconocimientos, o eventos importantes.</p>
+                    <a href="#" class="news-link">Leer más →</a>
+                </article>
+                <article class="news-card">
+                    <div class="news-date">5 Enero 2024</div>
+                    <h3 class="news-title">Premio al Mejor Proyecto</h3>
+                    <p class="news-excerpt">Resumen breve de la noticia o publicación. Puede incluir información sobre premios, reconocimientos, o eventos importantes.</p>
+                    <a href="#" class="news-link">Leer más →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entrevistas Section -->
+    <section id="entrevistas" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Entrevistas & Radio</h2>
+            <div class="interviews-list">
+                <div class="interview-item">
+                    <div class="interview-media">
+                        <span class="media-type">Podcast</span>
+                    </div>
+                    <div class="interview-content">
+                        <h3 class="interview-title">Entrevista en [Nombre del Podcast]</h3>
+                        <p class="interview-description">Tema de la entrevista y puntos principales discutidos durante la conversación.</p>
+                        <div class="interview-meta">
+                            <span class="interview-date">Marzo 2024</span>
+                            <a href="#" class="interview-link">Escuchar →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="interview-item">
+                    <div class="interview-media">
+                        <span class="media-type">Radio</span>
+                    </div>
+                    <div class="interview-content">
+                        <h3 class="interview-title">Entrevista en [Estación de Radio]</h3>
+                        <p class="interview-description">Tema de la entrevista y puntos principales discutidos durante la conversación.</p>
+                        <div class="interview-meta">
+                            <span class="interview-date">Febrero 2024</span>
+                            <a href="#" class="interview-link">Escuchar →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="interview-item">
+                    <div class="interview-media">
+                        <span class="media-type">Video</span>
+                    </div>
+                    <div class="interview-content">
+                        <h3 class="interview-title">Entrevista en [Canal de YouTube]</h3>
+                        <p class="interview-description">Tema de la entrevista y puntos principales discutidos durante la conversación.</p>
+                        <div class="interview-meta">
+                            <span class="interview-date">Enero 2024</span>
+                            <a href="#" class="interview-link">Ver →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clientes Section -->
+    <section id="clientes" class="section">
+        <div class="container">
+            <h2 class="section-title">Clientes</h2>
+            <div class="clients-grid">
+                <div class="client-item">
+                    <div class="client-logo">Logo Cliente</div>
+                    <h3 class="client-name">Cliente 1</h3>
+                    <p class="client-project">Proyecto realizado</p>
+                </div>
+                <div class="client-item">
+                    <div class="client-logo">Logo Cliente</div>
+                    <h3 class="client-name">Cliente 2</h3>
+                    <p class="client-project">Proyecto realizado</p>
+                </div>
+                <div class="client-item">
+                    <div class="client-logo">Logo Cliente</div>
+                    <h3 class="client-name">Cliente 3</h3>
+                    <p class="client-project">Proyecto realizado</p>
+                </div>
+                <div class="client-item">
+                    <div class="client-logo">Logo Cliente</div>
+                    <h3 class="client-name">Cliente 4</h3>
+                    <p class="client-project">Proyecto realizado</p>
+                </div>
+                <div class="client-item">
+                    <div class="client-logo">Logo Cliente</div>
+                    <h3 class="client-name">Cliente 5</h3>
+                    <p class="client-project">Proyecto realizado</p>
+                </div>
+                <div class="client-item">
+                    <div class="client-logo">Logo Cliente</div>
+                    <h3 class="client-name">Cliente 6</h3>
+                    <p class="client-project">Proyecto realizado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-text">Para colaboraciones, consultas o más información, puedes contactarme a través de:</p>
+                    <div class="contact-details">
+                        <a href="mailto:tu@email.com" class="contact-link">tu@email.com</a>
+                        <a href="https://linkedin.com/in/tuperfil" class="contact-link" target="_blank">LinkedIn</a>
+                        <a href="https://instagram.com/tuperfil" class="contact-link" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
-</html> 
+</html>

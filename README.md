@@ -1,62 +1,116 @@
-# 🎮 Pompidou Adventure
+# Sitio Web Personal
 
-Un juego de plataformas inspirado en el clásico Mario Bros, ambientado en el Centro Pompidou de París.
+Sitio web personal inspirado en el diseño minimalista de Arturo Tedeschi, con secciones para proyectos, cursos, noticias, entrevistas y clientes.
 
-## 🎯 Objetivo del Juego
+## Características
 
-¡Llega al tubo superior del Centro Pompidou evitando los barriles que caen por la escalera mecánica!
+- **Diseño Minimalista**: Inspirado en el estilo limpio y elegante de Arturo Tedeschi
+- **Totalmente Responsive**: Adaptado para dispositivos móviles, tablets y escritorio
+- **Navegación Suave**: Scroll suave entre secciones
+- **Animaciones Sutiles**: Efectos de fade-in y hover para mejorar la experiencia
+- **Secciones Incluidas**:
+  - Hero/Inicio
+  - Proyectos (con grid de tarjetas)
+  - Cursos (lista detallada)
+  - Noticias (blog/actualizaciones)
+  - Entrevistas & Radio (podcasts, radio, videos)
+  - Clientes (grid de logos)
+  - Contacto
 
-## 🎮 Cómo Jugar
+## Personalización
 
-- **Flechas ← →**: Mover el personaje
-- **Espacio**: Saltar
-- **Objetivo**: Llegar a la parte superior del edificio
-- **Evita**: Los barriles que caen desde arriba
+### 1. Información Personal
+Edita `index.html` y reemplaza:
+- "Tu Nombre" con tu nombre real
+- "Profesión / Especialidad" con tu título profesional
+- La descripción en la sección hero
+- Los enlaces de contacto (email, LinkedIn, Instagram)
 
-## 🚀 Características
+### 2. Proyectos
+En la sección de proyectos, reemplaza:
+- Los títulos de los proyectos
+- Las descripciones
+- Los años
+- Las imágenes placeholder con tus propias imágenes
 
-- ✅ Movimiento fluido del personaje
-- ✅ Sistema de plataformas
-- ✅ Barriles enemigos que caen
-- ✅ Sistema de vidas y puntuación
-- ✅ Múltiples niveles
-- ✅ Diseño responsive
+### 3. Cursos
+Actualiza la información de los cursos:
+- Títulos
+- Descripciones
+- Fechas
+- Ubicación (Online/Presencial)
+- Duración
 
-## 🛠️ Tecnologías
+### 4. Noticias
+Agrega tus propias noticias con:
+- Fechas
+- Títulos
+- Resúmenes
+- Enlaces a artículos completos
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- Canvas API
+### 5. Entrevistas
+Incluye tus entrevistas con:
+- Tipo de medio (Podcast, Radio, Video)
+- Título
+- Descripción
+- Fecha
+- Enlace para escuchar/ver
 
-## 🎨 Próximas Mejoras
+### 6. Clientes
+Reemplaza los placeholders con:
+- Logos de tus clientes (imágenes)
+- Nombres de clientes
+- Descripción del proyecto realizado
 
-- [ ] Sprites del personaje principal
-- [ ] Fondo del Centro Pompidou
-- [ ] Enemigos con sprites
-- [ ] Efectos de sonido
-- [ ] Animaciones mejoradas
+### 7. Colores y Tipografía
+En `styles.css`, puedes personalizar los colores en la sección `:root`:
+```css
+:root {
+    --primary-color: #000;
+    --secondary-color: #666;
+    --accent-color: #333;
+    --bg-color: #fff;
+    --bg-alt: #f8f8f8;
+    /* ... */
+}
+```
 
-## 🌐 Jugar Online
+## Agregar Imágenes
 
-**¡Juega ahora!** → [https://iarquitect.github.io/mi-juego](https://iarquitect.github.io/mi-juego)
+1. Crea una carpeta `images` en la raíz del proyecto (si no existe)
+2. Agrega tus imágenes de proyectos, clientes, etc.
+3. Reemplaza los `<div class="placeholder-image">` con:
+```html
+<img src="images/tu-imagen.jpg" alt="Descripción">
+```
 
-## 📁 Estructura del Proyecto
+## Estructura de Archivos
 
 ```
-mi-juego/
-├── index.html      # Estructura principal
+.
+├── index.html      # Estructura HTML principal
 ├── styles.css      # Estilos y diseño
-├── script.js       # Lógica del juego
+├── script.js       # Funcionalidad JavaScript
+├── images/         # Carpeta para imágenes
 └── README.md       # Este archivo
 ```
 
-## 🎯 Estado del Proyecto
+## Uso
 
-**Versión actual**: 1.0.0  
-**Estado**: En desarrollo  
-**Última actualización**: Julio 2025
+Simplemente abre `index.html` en tu navegador web. No se requiere servidor ni instalación de dependencias.
 
----
+Para desarrollo local con live reload, puedes usar:
+- VS Code con Live Server extension
+- Python: `python -m http.server 8000`
+- Node.js: `npx serve`
 
-¡Disfruta del juego! 🎮✨ 
+## Navegación
+
+El sitio incluye:
+- Menú de navegación fijo en la parte superior
+- Enlaces de navegación suave entre secciones
+- Menú hamburguesa para dispositivos móviles
+
+## Licencia
+
+Personaliza y usa este sitio como desees para tu portafolio personal.
