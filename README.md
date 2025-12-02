@@ -4,7 +4,7 @@ Sitio web personal inspirado en el diseño minimalista de Arturo Tedeschi, con s
 
 ## Características
 
-- **Diseño Minimalista**: Inspirado en el estilo limpio y elegante de Arturo Tedeschi
+- **Diseño Minimalista**: Estilo limpio y elegante
 - **Totalmente Responsive**: Adaptado para dispositivos móviles, tablets y escritorio
 - **Navegación Suave**: Scroll suave entre secciones
 - **Animaciones Sutiles**: Efectos de fade-in y hover para mejorar la experiencia
